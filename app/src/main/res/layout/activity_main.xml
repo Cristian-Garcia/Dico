@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical" >
+
+    <!-- APP Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="100dp"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/textView" />
+
+    <!-- Menu Buttons -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="@string/start"
+        android:background="@drawable/pill_bg"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="@string/quit"
+        android:background="@drawable/pill_bg"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart"
+        android:textSize="20dp"/>
+</RelativeLayout>
